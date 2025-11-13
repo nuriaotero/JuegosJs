@@ -23,16 +23,9 @@ function addTask() {
         createdAt: new Date()
     };
 
-   
-    tasks.push(newTask);
-
-   
-    taskInput.value = '';
-
-    
-    renderTasks();
-
-    
+tasks.push(newTask);
+    taskInput.value = ''; 
+    renderTasks(); 
     taskInput.focus();
 }
 
@@ -177,18 +170,18 @@ function handleKeyPress(event) {
     }
 }
 
+function init() {
 
+    
 
     addTaskButton.addEventListener('click', addTask);
     taskInput.addEventListener('keypress', handleKeyPress);
 
 
-    window.addEventListener('beforeunload', () => {
-        localStorage.setItem('tasks', JSON.stringify(tasks));
-    });
-
-
+  
     taskInput.focus();
 }
+
+
 
 
