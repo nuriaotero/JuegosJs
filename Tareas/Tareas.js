@@ -177,13 +177,6 @@ function handleKeyPress(event) {
     }
 }
 
-function init() {
-
-    const savedTasks = localStorage.getItem('tasks');
-    if (savedTasks) {
-        tasks = JSON.parse(savedTasks);
-        renderTasks();
-    }
 
 
     addTaskButton.addEventListener('click', addTask);
@@ -199,4 +192,3 @@ function init() {
 }
 
 
-document.addEventListener('DOMContentLoaded', init);
