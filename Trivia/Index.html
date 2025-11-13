@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de Programación</title>
+    <link rel="stylesheet" href="Trivia.css">
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-text">Trivia de Programación</div>
+            <div class="title-buttons">
+                <button>_</button>
+                <button>□</button>
+                <button>×</button>
+            </div>
+        </div>
+        
+        <div class="window-content">
+            <div id="pantalla-inicio" class="pantalla activa">
+                <h2>Bienvenido al Quiz de Programación</h2>
+                <p>Responde 3 preguntas sobre conceptos básicos de programación.</p>
+                <button id="btnComenzar" class="xp-button">Comenzar Quiz</button>
+            </div>
+            
+            <div id="pantalla-quiz" class="pantalla">
+                <div class="progress-bar">
+                    <div id="progreso" class="progress-fill"></div>
+                </div>
+                <h3 id="pregunta-texto">¿Qué significa HTML?</h3>
+                <div id="opciones-container" class="opciones">
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+            
+            <div id="pantalla-resultados" class="pantalla">
+                <h2>Resultados del Quiz</h2>
+                <div id="puntuacion" class="puntuacion">Acertaste: <span id="aciertos">0</span>/3</div>
+                <div id="respuestas-incorrectas" class="respuestas-incorrectas">
+                  
+                </div>
+                <button id="btnReiniciar" class="xp-button">Intentar de Nuevo</button>
+            </div>
+        </div>
+        
+        <div class="status-bar">
+            <div class="status-text" id="status-text">Listo</div>
+        </div>
+        <button class="volver-juegos"><a href="../Index.html">⬅ Volver a Juegos</a></button>
+
+    </div>
+
+    <script src="Trivia.js"></script>
+</body>
+</html>

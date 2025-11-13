@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda</title>
+    <link rel="stylesheet" href="Conversor.css">
+<body>
+    <h1>Conversor de Moneda</h1>
+    <div class="conversor">
+         <input type="number" id="cantidad" placeholder="Ingresa la cantidad"></input>
+       <label>Convertir de:</label>
+         <select id="monedaOrigen">
+              <option value="USD">Dólar Estadounidense (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">Libra Esterlina (GBP)</option>
+              <option value="JPY">Yen Japonés (JPY)</option> </select>
+              <label>Convertir a:</label>
+         <select id="monedaDestino">
+              <option value="USD">Dólar Estadounidense (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">Libra Esterlina (GBP)</option>
+              <option value="JPY">Yen Japonés (JPY)</option>    
+            </select>   
+        <input type="button" id="btnConvertir" value="Convertir"></input>
+        <p id="resultado"></p>
+        <button class="volver-juegos"><a href="../Index.html">⬅ Volver a Juegos</a></button>
+    </div>
+
+    <script src="Conversor.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" href="PiedraPapelTijeras.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Piedra, Papel o Tijeras</h1>
+        <p class="subtitle">Elige tu jugada y compite contra el ordenador.</p>
+        
+        <div class="game-area">
+            <div class="player">
+                <h2>Tú</h2>
+                <div class="image-container">
+                    <img id="imagenJugador" src="ImagenJugador.jpg" alt="Tu elección" class="imagen-juego">
+                </div>
+                <div class="botones">
+                    <button id="piedra" class="btn-juego"> ✊ Piedra</button>
+                    <button id="papel" class="btn-juego"> ✋ Papel</button>
+                    <button id="tijeras" class="btn-juego"> ✌️ Tijeras</button>
+                </div>
+            </div>
+            
+            <div class="vs">VS</div>
+            
+            <div class="computer">
+                <h2>Ordenador</h2>
+                <div class="image-container">
+                    <img id="imagenPC" src="ImagenPC.jpg" alt="Elección de la computadora" class="imagen-juego">
+                </div>
+                <div class="pc-thinking">
+                    <span></span>   
+                </div>
+            </div>
+        </div>
+        
+        <div class="resultado">
+            <div id="resultado" class="resultado-texto">¡Haz tu elección!</div>
+            <div id="puntuacion" class="puntuacion">Puntuación - Tú: 0 | Ordenador: 0</div>
+        </div>
+        
+        
+        <button id="reset" class="btn-reset">Reiniciar Juego</button>
+        <button class="volver-juegos"><a href="../Index.html">⬅ Volver a Juegos</a></button>
+        
+    </div>
+    
+    <script src="PiedraPapelTijeras.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* ======== Fondo general (Aero) ======== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top left, #2a2a2a, #0a0a0a 80%);
+    color: #e6e6e6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======== Caja del juego (efecto vidrio) ======== */
+.juego {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    padding: 30px 40px;
+    width: 320px;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* ======== Título ======== */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b2e0ff;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #0077cc;
+}
+
+/* ======== Texto de instrucciones ======== */
+.juego p {
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* ======== Inputs ======== */
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #a9d1ff;
+    text-align: center;
+    margin: 12px 0;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #66ccff;
+    box-shadow: 0 0 8px #33bbff;
+}
+
+/* ======== Botones ======== */
+button {
+    background: linear-gradient(to bottom, #c0e0ff, #5caeff);
+    border: 1px solid #3a7bd5;
+    border-radius: 8px;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #e4f1ff, #79b8ff);
+    box-shadow: 0 0 10px rgba(100, 180, 255, 0.6);
+    transform: translateY(-1px);
+}
+
+button:active {
+    background: linear-gradient(to bottom, #9ecbff, #5caeff);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ======== Feedback ======== */
+#feedback {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    min-height: 20px;
+    color: #fff;
+}
+
+/* ======== Intentos ======== */
+p.intentos-texto {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#Intentos {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #b2e0ff;
+    text-shadow: 0 0 8px #0077cc;
+    margin-bottom: 15px;
+}
+
+/* ======== Botón volver ======== */
+.volver-juegos {
+    margin-top: 20px;
+    display: inline-block;
+    background: linear-gradient(to bottom, #a0c8ff, #3f88ff);
+    border: 1px solid #2a5da8;
+    border-radius: 10px;
+    padding: 8px 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.volver-juegos a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 5px #000;
+}
+
+.volver-juegos:hover {
+    background: linear-gradient(to bottom, #d8ecff, #5aa8ff);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(90,160,255,0.6);
+}
+
+/* ======== Responsive ======== */
+@media (max-width: 400px) {
+    .juego {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+
+    button {
+        width: 90%;
+    }
+}

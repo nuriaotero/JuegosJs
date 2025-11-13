@@ -1,0 +1,249 @@
+
+
+/* Conversor.css - Estilo Windows 98 - VERSIÓN RESPONSIVE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #008080;
+    font-family: 'MS Sans Serif', 'Microsoft Sans Serif', Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('https://res.cloudinary.com/penry/image/upload/q_100/v1476205026/71e7521bf278a0f92c662fe0f1296fe7_1_fqxv9g.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+    
+
+h1 {
+    background-color: #000080;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px outset #c0c0c0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.conversor {
+    background-color: #c0c0c0;
+    border: 3px outset #c0c0c0;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.conversor label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.conversor input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 3px inset #c0c0c0;
+    background-color: #fff;
+    font-family: 'MS Sans Serif', 'Microsoft Sans Serif', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.conversor select {
+    width: 100%;
+    padding: 12px;
+    border: 3px inset #c0c0c0;
+    background-color: #fff;
+    font-family: 'MS Sans Serif', 'Microsoft Sans Serif', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iYmxhY2siIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik03LjQxIDguNTlMMTIgMTMuMTdsNC41OS00LjU4TDE4IDEwbC02IDYtNi02eiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz4=');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+.conversor input[type="button"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #c0c0c0;
+    border: 3px outset #c0c0c0;
+    font-family: 'MS Sans Serif', 'Microsoft Sans Serif', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.conversor input[type="button"]:active {
+    border: 3px inset #c0c0c0;
+}
+
+#resultado {
+    background-color: #fff;
+    border: 3px inset #c0c0c0;
+    padding: 15px;
+    margin-top: 15px;
+    min-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.volver-juegos {
+    background-color: #c0c0c0;
+    border: 3px outset #c0c0c0;
+    padding: 12px 20px;
+    font-family: 'MS Sans Serif', 'Microsoft Sans Serif', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.volver-juegos:active {
+    border: 3px inset #c0c0c0;
+}
+
+.volver-juegos a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.conversor input[type="number"]:focus,
+.conversor select:focus {
+    outline: 2px dotted #000;
+}
+
+
+.conversor, h1, .volver-juegos {
+    box-shadow: 2px 2px 0px #000;
+}
+
+.resultado-convertido {
+    color: #000080;
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 1024px) {
+    body {
+        padding: 15px;
+            background-image: url('fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+    h1 {
+        font-size: 22px;
+        padding: 12px 18px;
+        margin: 15px 0;
+    }
+    
+    .conversor {
+        padding: 18px;
+    }
+    
+    .conversor label {
+        font-size: 15px;
+    }
+    
+    .conversor input[type="number"],
+    .conversor select,
+    .conversor input[type="button"] {
+        font-size: 15px;
+        padding: 11px;
+    }
+    
+    #resultado {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+        font-size: 14px;
+            background-image: url('fondomovil.png');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    }
+    
+    h1 {
+        font-size: 20px;
+        padding: 10px 15px;
+        margin: 12px 0;
+    }
+    
+    .conversor {
+        padding: 15px;
+    }
+    
+    .conversor label {
+        font-size: 14px;
+        margin: 10px 0 5px;
+    }
+    
+    .conversor input[type="number"],
+    .conversor select,
+    .conversor input[type="button"] {
+        font-size: 14px;
+        padding: 10px;
+        border-width: 2px;
+    }
+    
+    .conversor select {
+        background-size: 16px;
+        background-position: right 8px center;
+    }
+    
+    #resultado {
+        font-size: 14px;
+        padding: 10px;
+        min-height: 45px;
+        border-width: 2px;
+    }
+    
+    .volver-juegos {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-width: 2px;
+    }
+    
+    .volver-juegos a {
+        font-size: 14px;
+    }
+}
+
+

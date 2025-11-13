@@ -1,0 +1,117 @@
+/* ======== Estilos generales ======== */
+body {
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background: linear-gradient(135deg, #d4edda, #a8e6a3, #81c784);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ======== Header ======== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 20px 0;
+    background: #c8e6c9; /* verde más claro */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #1b5e20;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #2e7d32;
+    font-size: 1.2rem;
+}
+
+/* ======== Botones de juegos ======== */
+button {
+    background: linear-gradient(45deg, #66bb6a, #388e3c);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    width: 280px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #81c784, #2e7d32);
+    transform: scale(1.05);
+    box-shadow: 0 7px 14px rgba(0,0,0,0.3);
+}
+
+/* ======== Contenedor botón volver ======== */
+.contenedor {
+    margin-top: 30px;
+}
+
+/* ======== Botón volver ======== */
+.btn-volver {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, #66bb6a, #388e3c);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    background: linear-gradient(45deg, #81c784, #2e7d32);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* ======== Footer ======== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    background: #2e7d32; /* verde oscuro */
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+}
+
+footer b {
+    color: #a5d6a7;
+}
+
+/* ======== Responsive para móviles ======== */
+@media (max-width: 480px) {
+    button {
+        width: 80%;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .btn-volver {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
