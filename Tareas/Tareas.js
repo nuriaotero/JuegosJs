@@ -182,6 +182,6 @@ function init() {
     taskInput.focus();
 }
 
-
+document.addEventListener('DOMContentLoaded', init);
 
 
