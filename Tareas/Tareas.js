@@ -38,7 +38,7 @@ function addTask() {
 
 
 function renderTasks() {
-    // Limpiar la lista actual
+    
     taskList.innerHTML = '';
 
     
