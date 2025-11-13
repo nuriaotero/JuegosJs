@@ -1,5 +1,5 @@
 var NumeroAleatorio = Math.floor(Math.random() * 100) + 1;
-var Numerosupuestouesto = document.getElementById("NumeroIntroducido");
+var NumeroSupuesto = document.getElementById("NumeroIntroducido");
 var btnComparar = document.getElementById("btnComparar");
 var btnReset = document.getElementById("btnReset");
 var feedbackTxt = document.getElementById("feedback");
@@ -8,7 +8,7 @@ intentos.textContent = 10;
 btnComparar.addEventListener("click", Comparar);
 
 function Comparar() {
-    let supuestouesto = parseInt(Numerosupuestouesto.value);
+    let supuesto = parseInt(NumeroSupuesto.value);
     if (intentos.textContent <= 0) {
         feedbackTxt.textContent = "¡Juego terminado! Reinicia para jugar de nuevo.";
 
@@ -31,16 +31,16 @@ function Comparar() {
         feedbackTxt.textContent = "¡ENHORABUENA, HAS ACERTADO!";
         intentos.textContent = 10;
         NumeroAleatorio = Math.floor(Math.random() * 100) + 1;
-        Numerosupuestouesto.value = "";
+        NumeroSupuesto.value = "";
         return;
     }
 
-    Numerosupuestouesto.value = "";
+    NumeroSupuesto.value = "";
 }
 
 btnReset.addEventListener("click", () => {
     NumeroAleatorio = Math.floor(Math.random() * 100) + 1;
-    Numerosupuestouesto.value = "";
+    NumeroSupuesto.value = "";
     feedbackTxt.textContent = "";
     intentos.textContent = 10;
 });
