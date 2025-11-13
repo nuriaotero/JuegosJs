@@ -59,24 +59,7 @@ button:hover {
 }
 
 /* ======== Botón volver ======== */
-.btn-volver {
-    display: inline-block;
-    text-decoration: none;
-    background: linear-gradient(45deg, #66bb6a, #388e3c);
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 12px 25px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: all 0.3s ease;
-}
 
-.btn-volver:hover {
-    background: linear-gradient(45deg, #81c784, #2e7d32);
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-}
 
 /* ======== Footer ======== */
 footer {
